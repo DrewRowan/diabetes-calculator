@@ -28,15 +28,15 @@
             <div class="carb-calculator-form mb-4">
                     <div class="form-group mb-2">
                         <label for="inputInsulinPerCarbs">Insulin units per 10g of carbs</label>
-                        <input type="text" class="form-control" id="inputInsulinPerCarbs" placeholder="Insulin units per 10g of carbs">
+                        <input type="number" step=".1" class="form-control" id="inputInsulinPerCarbs" placeholder="Insulin units per 10g of carbs">
                     </div>
                     <div class="form-group mb-2">
                         <label for="inputAdjustmentDose">Adjustment dose</label>
-                        <input type="text" class="form-control" id="inputAdjustmentDose" value="1">
+                        <input type="number" step=".1" class="form-control" id="inputAdjustmentDose" value="1">
                     </div>
                     <div class="form-group mb-2">
                         <label for="inputCarbsInMeal">Carbs in meal (in grams)</label>
-                        <input type="text" class="form-control" id="inputCarbsInMeal" placeholder="Carbs in meal (in grams)">
+                        <input type="number" step=".1" class="form-control" id="inputCarbsInMeal" placeholder="Carbs in meal (in grams)">
                     </div>
                     <div class="form-group mb-2">
                         <label for="inputUnits">Units</label>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group mb-4">
                         <label for="inputCurrentGlucoseRange">Current Blood Glucose</label>
-                        <input type="text" class="form-control" id="inputCurrentGlucoseRange" placeholder="Current Blood Glucose">
+                        <input type="number" step=".1" class="form-control" id="inputCurrentGlucoseRange" placeholder="Current Blood Glucose">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                 <div class="clearfix"></div>
