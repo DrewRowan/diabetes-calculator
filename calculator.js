@@ -4,8 +4,10 @@ let carbsInMeal = document.getElementById("inputCarbsInMeal");
 let currentGlucose = document.getElementById("inputCurrentGlucoseRange");
 let glucoseUnits = document.getElementById("inputUnits");
 let resultBox = document.getElementById("resultContainer");
+let calculatorForm = document.getElementById("calculatorForm");
 
-document.getElementById("submit").addEventListener("click", function() {
+calculatorForm.addEventListener("submit", function(e) {
+    e.preventDefault();
     let values = getValues();
     if (!validate(values)) {
         return;
