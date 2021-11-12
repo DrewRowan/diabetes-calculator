@@ -31,12 +31,23 @@
                         <input type="text" class="form-control" id="inputInsulinPerCarbs" placeholder="Insulin units per 10g of carbs">
                     </div>
                     <div class="form-group mb-2">
+                        <label for="inputAdjustmentDose">Adjustment dose</label>
+                        <input type="text" class="form-control" id="inputAdjustmentDose" value="1">
+                    </div>
+                    <div class="form-group mb-2">
                         <label for="inputCarbsInMeal">Carbs in meal (in grams)</label>
                         <input type="text" class="form-control" id="inputCarbsInMeal" placeholder="Carbs in meal (in grams)">
                     </div>
+                    <div class="form-group mb-2">
+                        <label for="inputUnits">Units</label>
+                        <select class="form-select" id="inputUnits" aria-label="mmol">
+                            <option value="mmol" selected>mmol</option>
+                            <option value="mgdl">mg/dl</option>
+                          </select>
+                    </div>
                     <div class="form-group mb-4">
-                        <label for="inputCurrentGlucoseRange">Current Blood Glucose (mmol)</label>
-                        <input type="text" class="form-control" id="inputCurrentGlucoseRange" placeholder="Current Blood Glucose (mmol)">
+                        <label for="inputCurrentGlucoseRange">Current Blood Glucose</label>
+                        <input type="text" class="form-control" id="inputCurrentGlucoseRange" placeholder="Current Blood Glucose">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                 <div class="clearfix"></div>
